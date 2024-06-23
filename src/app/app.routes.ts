@@ -1,3 +1,9 @@
 import { Routes } from '@angular/router';
+import { landingRoutes } from './landing/landing.route';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {
+        path:'',
+        loadChildren: () => landingRoutes
+    }
+];

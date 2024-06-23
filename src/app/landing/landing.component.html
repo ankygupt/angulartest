@@ -1,0 +1,10 @@
+
+<div class="navbar">
+    @for(data of urls; track data){
+        <a [routerLink]="data" routerLinkActive="active">{{data | titlecase}}</a>
+    }
+</div>
+
+<div class="container">
+    <router-outlet/>
+</div>
