@@ -1,0 +1,26 @@
+<div class="container">
+    <form class="login_form" [formGroup]="loginForm">
+        <div class="form_username">
+            <label for="username">UserType:</label>
+            <select formControlName="usertype">
+                <option value="user" >User</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="form_password">
+            <label for="username">Password:</label>
+            <input type="password" placeholder="Enter password here" id="password" formControlName="password">
+            @if(loginForm.controls['password'].invalid && (loginForm.controls['password'].touched || loginForm.controls['password'].dirty)){
+                @if(loginForm.controls['password'].hasError('required')){
+                    <div>
+                        <span>Incorrect password</span>
+                    </div>
+                }
+            }
+        </div>
+
+        <button class="login_btn" (click)="login(loginForm)">Login</button>
+
+    </form>
+</div>

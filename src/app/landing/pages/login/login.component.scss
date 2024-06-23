@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: large;    
+}
+
+
+
+form {
+    width: auto;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: auto;
+    align-items: center;
+}
+
+.login_btn{
+    border: 0;
+    background-color: #3a98e6;
+    padding: 1.2em;
+    border-radius: 20px;
+    font-size: medium;
+}

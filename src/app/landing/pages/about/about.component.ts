@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <p>
+    <h1>
       about works!
-    </p>
+</h1>
   `,
   styles: ``
 })

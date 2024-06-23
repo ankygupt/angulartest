@@ -5,5 +5,14 @@ export const routes: Routes = [
     {
         path:'',
         loadChildren: () => landingRoutes
-    }
+    },
+    // {
+    //     path:'',
+    //     canActivate: [() => {}],
+    // }
 ];
+
+
+export const checkForAuthorisedUser = () => {
+    // const router = inject()
+}
