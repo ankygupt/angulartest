@@ -5,17 +5,24 @@
     padding: 2rem;
     background-color: teal;
 
-    a:hover {
-        background-color: chocolate;
-        border-radius: 4.5px;
-        // padding: 5px
-    }
 
-    a {
-        text-decoration: none;
-        font-size: 22px;
-    }
 
+}
+
+a:hover {
+    background-color: #084747;
+    border-radius: 5px;
+    text-decoration: underline;
+    color: white;
+    // padding: 5px
+}
+
+a {
+    color: #1a3b3b;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
 }
 
 

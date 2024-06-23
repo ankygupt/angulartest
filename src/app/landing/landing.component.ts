@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { LandingRouteEnum } from './landing.model';
 import { TitleCasePipe, UpperCasePipe } from '@angular/common';
@@ -10,7 +10,7 @@ import { TitleCasePipe, UpperCasePipe } from '@angular/common';
     RouterLink,RouterModule,
     UpperCasePipe,TitleCasePipe],
   templateUrl: "./landing.component.html",
-  styleUrl: './landing.component.scss'
+  styleUrl: './landing.component.scss',
 })
 export class LandingComponent {
 
