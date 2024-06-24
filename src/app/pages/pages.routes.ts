@@ -1,9 +1,6 @@
 import { Routes } from "@angular/router";
 import { PagesComponent } from "./pages.component";
-import { PagesRoute, UserTypeRoute } from "./pages.model";
-import { DashboardComponent } from "../shared/dashboard/dashboard.component";
-import { AdminComponent } from "./admin/admin.component";
-import { UserComponent } from "./user/user.component";
+import { UserTypeRoute } from "./pages.model";
 import { getUserType } from "../shared/storage";
 import { adminRoutes } from "./admin/admin.routes";
 import { userRoutes } from "./user/user.routes";
@@ -20,8 +17,8 @@ export const pagesRoutes: Routes = [
         loadComponent: () => PagesComponent,
         children: [
             {
-                path: '',
-                
+                path: "",
+
                 canMatch: [() => {
                     const userType = getUserType()
                     console.log(userType)
@@ -30,7 +27,7 @@ export const pagesRoutes: Routes = [
                 loadChildren: () => adminRoutes
             },
             {
-                path: '',
+                path: "",
                 canMatch: [() => {
                     const userType = getUserType()
                     console.log(userType)

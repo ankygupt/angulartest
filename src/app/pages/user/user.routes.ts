@@ -1,6 +1,5 @@
 import { Routes } from "@angular/router";
 import { UserComponent } from "./user.component";
-import { DashboardComponent } from "../../shared/dashboard/dashboard.component";
 import { PagesRoute } from "../pages.model";
 
 export const userRoutes: Routes = [
@@ -15,7 +14,7 @@ export const userRoutes: Routes = [
             },
             {
                 path: PagesRoute.DASHBOARD,
-                loadComponent: () => DashboardComponent
+                loadComponent: () => import("./dashboard/dashboard.component").then(x => x.UserDashboardComponent)
               },
         ]
     }

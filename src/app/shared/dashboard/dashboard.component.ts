@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 
 @Component({
-  selector: 'dashboard',
+  selector: 'shared-dashboard',
   standalone: true,
   imports: [],
   template: `
@@ -15,7 +15,7 @@ import { Component, signal } from '@angular/core';
   `,
   styles: ``
 })
-export class DashboardComponent {
+export class SharedDashboardComponent {
 
   userType = signal<string>('')
 }
