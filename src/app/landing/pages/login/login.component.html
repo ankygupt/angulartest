@@ -9,7 +9,7 @@
         </div>
 
         <div class="form_password">
-            <label for="username">Password:</label>
+            <label for="username" >Password:</label>
             <input type="password" placeholder="Enter password here" id="password" formControlName="password">
             @if(loginForm.controls['password'].invalid && (loginForm.controls['password'].touched || loginForm.controls['password'].dirty)){
                 @if(loginForm.controls['password'].hasError('required')){

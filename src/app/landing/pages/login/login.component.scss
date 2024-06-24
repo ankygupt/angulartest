@@ -27,3 +27,17 @@ form {
     border-radius: 20px;
     font-size: medium;
 }
+
+label{
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+select, input{
+    padding: 9px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: solid 1px;
+    box-shadow: none;
+    text-shadow: none;
+}
