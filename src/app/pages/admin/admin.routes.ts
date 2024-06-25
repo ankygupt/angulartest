@@ -15,7 +15,7 @@ export const adminRoutes: Routes = [
             {
                 path: PagesRoute.DASHBOARD,
                 loadComponent: () => import("./dashboard/dashboard.component").then(x => x.AdminDashboardComponent)
-              },
+            },
         ]
     }
 ]

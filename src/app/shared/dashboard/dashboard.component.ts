@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 
 @Component({
   selector: 'shared-dashboard',
@@ -17,5 +17,5 @@ import { Component, signal } from '@angular/core';
 })
 export class SharedDashboardComponent {
 
-  userType = signal<string>('')
+  userType = input.required<string>()
 }

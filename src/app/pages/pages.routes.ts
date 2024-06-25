@@ -18,7 +18,6 @@ export const pagesRoutes: Routes = [
         children: [
             {
                 path: "",
-
                 canMatch: [() => {
                     const userType = getUserType()
                     console.log(userType)

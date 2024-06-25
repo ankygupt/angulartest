@@ -1,4 +1,4 @@
-import { Component, Input, signal } from '@angular/core';
+import { Component, Input, input, signal } from '@angular/core';
 
 @Component({
   selector: 'shared-navbar',
@@ -17,6 +17,7 @@ import { Component, Input, signal } from '@angular/core';
 })
 export class SharedNavbarComponent {
 
-  @Input({required:true}) userType = signal<string>('')
+  userType = input.required<string>()
+  
 
 }
