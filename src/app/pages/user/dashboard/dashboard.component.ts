@@ -11,8 +11,8 @@ import { getUserType } from '../../../shared/storage';
     <p>
       dashboard works!
     </p>
-    <shared-navbar [userType]="userData"/>
-    <shared-dashboard/>
+    <shared-navbar [userType]="userData()"/>
+    <shared-dashboard [userType]="userData()"/>
   `,
   styles: ``
 })

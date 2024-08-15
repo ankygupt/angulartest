@@ -13,7 +13,6 @@ import { UserTypeRoute } from './pages/pages.model';
             return false
         }
         return true
-        // return (userType == 'user' || 'admin') ? true : false
     }
 
 export const routes: Routes = [

@@ -9,9 +9,21 @@ import { ApicallService } from '../../../apicall.service';
   selector: 'dashboard',
   standalone: true,
   imports: [SharedDashboardComponent,SharedNavbarComponent],
+<<<<<<< HEAD
   templateUrl:'./dashboard.component.html',
   styles: ``,
   //providers:[HttpClient]
+=======
+  template: `
+    <p>
+      dashboard works!
+    </p>
+    <shared-navbar [userType]="userData()" />
+
+    <shared-dashboard [userType]="userData()"/>
+  `,
+  styles: ``
+>>>>>>> 02982ac6b31b5232df4c78f6bef0206fe3b3148a
 })
 export class AdminDashboardComponent {
   userData = signal<string>(getUserType()!)
