@@ -16,6 +16,5 @@ import { Component, signal } from '@angular/core';
   styles: ``
 })
 export class SharedDashboardComponent {
-
-  userType = signal<string>('')
+    userType = signal<string>('')
 }

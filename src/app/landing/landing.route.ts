@@ -20,7 +20,7 @@ export const landingRoutes: Routes = [
             {
                 path: LandingRouteEnum.LANDING_CONTACT,
                 loadComponent: () => import('./pages/contact/contact.component')
-                    .then(x => x.ContactComponent),
+                .then(x => x.ContactComponent),
             },
             {
                 path: LandingRouteEnum.LANDING_LOGIN,
