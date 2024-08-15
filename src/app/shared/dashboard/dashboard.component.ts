@@ -16,10 +16,7 @@ import { Component, input, signal } from '@angular/core';
   styles: ``
 })
 export class SharedDashboardComponent {
-<<<<<<< HEAD
-    userType = signal<string>('')
-=======
 
   userType = input.required<string>()
->>>>>>> 02982ac6b31b5232df4c78f6bef0206fe3b3148a
+
 }

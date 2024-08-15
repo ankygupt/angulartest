@@ -9,11 +9,6 @@ import { ApicallService } from '../../../apicall.service';
   selector: 'dashboard',
   standalone: true,
   imports: [SharedDashboardComponent,SharedNavbarComponent],
-<<<<<<< HEAD
-  templateUrl:'./dashboard.component.html',
-  styles: ``,
-  //providers:[HttpClient]
-=======
   template: `
     <p>
       dashboard works!
@@ -21,9 +16,9 @@ import { ApicallService } from '../../../apicall.service';
     <shared-navbar [userType]="userData()" />
 
     <shared-dashboard [userType]="userData()"/>
-  `,
+    `,
   styles: ``
->>>>>>> 02982ac6b31b5232df4c78f6bef0206fe3b3148a
+
 })
 export class AdminDashboardComponent {
   userData = signal<string>(getUserType()!)
@@ -33,9 +28,7 @@ export class AdminDashboardComponent {
   }
 
   ngOnInit(): void{
-      //this._api.call_get().subscribe((data)=>{console.log(data)},(err)=>{ console.log("logged error : ",err.status)});
-      //this._api.call_get().subscribe((data)=>{console.log(data)},(err)=>{ console.log("logged error : ",err.status)});
-      //this._api.call_get();
+      
        this._api.call_get().subscribe((data)=>{console.log(data)},
        (err)=>{ console.log("abcS")});
 
